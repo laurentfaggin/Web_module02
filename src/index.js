@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {Horloge} from "./Horloge.js"
 import {Recette} from './Recette.js'
-import {TableauEtudiant} from './Etudiants'
+import {TableauEtudiant} from './TableauEtudiants'
 import { StatutClasse } from './StatutClasse';
 
 
@@ -29,7 +29,7 @@ const recette = {
   ]
 }
 
-const horaire = {heures:23, minutes:35}
+const horaire = {heures:14, minutes:35}
 const etudiants = [
   {'note' : 8.5, 'nom' : 'Adam Bernard', 'matricule' : '486123'},
   {'note' : 10.0, 'nom' : 'Charles Demers', 'matricule' : '375911'},

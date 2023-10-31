@@ -10,4 +10,3 @@ export function Entete({titre,description}){
       </div>
     );
   }
-  

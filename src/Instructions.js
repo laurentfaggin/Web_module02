@@ -1,10 +1,10 @@
-import React from 'react';
 import {Instruction} from "./Instruction.js"
+import { TitreSecondaire } from './Titresecondaire.js';
 
 export function Instructions({instructions}){
     return (
       <div>
-        <h2>Instructions</h2>
+        <TitreSecondaire titre={"Instructions"}/>
         <ol>
           {instructions.map(i => 
             <Instruction instructions={i} key={i} />)}

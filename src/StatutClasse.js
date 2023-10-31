@@ -2,12 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {Etudiant} from './Etudiant.js'
+import { AfficherEtudiant } from './AfficherEtudiant.js';
 
 export function StatutClasse({etudiants}){
     const reussite = etudiants.filter(e => e.note >= 6);
     const echec = etudiants.filter(e => e.note < 6);
-
+    console.log(reussite)
     return(
         <Container>
             <Row>
@@ -19,10 +19,8 @@ export function StatutClasse({etudiants}){
                                 <th scope="col-3">Matricule</th>
                             </tr>
                         </thead>
-                        <tbody>            
-                            {reussite.map((e, index) =>                
-                            <Etudiant etudiant={e} key={index} />               
-                            )}            
+                        <tbody>      
+                            <AfficherEtudiant etudiants={reussite}/>                                       
                         </tbody>
                     </table>
                 </Col>
@@ -34,10 +32,8 @@ export function StatutClasse({etudiants}){
                                 <th scope="col-3">Matricule</th>
                             </tr>
                         </thead>
-                        <tbody>            
-                            {echec.map((e, index) =>                
-                            <Etudiant etudiant={e} key={index} />               
-                            )}            
+                        <tbody> 
+                            <AfficherEtudiant etudiants={echec}/>     
                         </tbody>
                         </table>
                 </Col>

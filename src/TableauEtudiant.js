@@ -1,6 +1,7 @@
-import {Etudiant} from './Etudiant.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
+import { AfficherEtudiant } from './AfficherEtudiant.js'
+
 
 export function TableauEtudiant({etudiants}){
     return (
@@ -12,10 +13,8 @@ export function TableauEtudiant({etudiants}){
                         <th scope="col-6">Matricule</th>
                     </tr>
                 </thead>
-                <tbody>            
-                    {etudiants.map((e, index) =>                
-                    <Etudiant etudiant={e} key={index} />               
-                    )}            
+                <tbody>    
+                    <AfficherEtudiant etudiants={etudiants}/>      
                 </tbody>
             </table>
         </Container>

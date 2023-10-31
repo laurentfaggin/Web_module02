@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {Horloge} from "./Horloge.js"
 import {Recette} from './Recette.js'
-import {TableauEtudiant} from './TableauEtudiants'
+import {TableauEtudiant} from './TableauEtudiant'
 import { StatutClasse } from './StatutClasse';
 
 
@@ -42,7 +42,6 @@ const etudiants = [
   {'note' : 0.0, 'nom' : 'Quentin Roberge', 'matricule' : '791222'},
   {'note' : 9.5, 'nom' : 'Sylvie Tanguay', 'matricule' : '777855'},
 ];
-
 
 function Affiche(){
   return <>

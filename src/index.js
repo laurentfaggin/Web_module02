@@ -4,7 +4,7 @@ import './index.css';
 import {Horloge} from "./Horloge.js"
 import {Recette} from './Recette.js'
 import {TableauEtudiant} from './TableauEtudiant'
-import { StatutClasse } from './StatutClasse';
+import { StatutClasse } from './StatutClasse'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

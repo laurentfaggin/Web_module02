@@ -9,4 +9,4 @@ export function Recette({recette}){
        <Ingredients ingredients={recette.ingredients}/>
        <Instructions instructions={recette.instructions}/>
        </>
-  }
+}
